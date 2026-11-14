@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Private credentials, local artifacts and reports
+*.pem
+*.p12
+*.pfx
+*.key
+secrets/
+credentials/
+environment_report.txt
+*environment_report*.txt
+
+# All collected or generated data: data cannot be republished without review
+data/
+lakehouse/
+warehouse/
+checkpoints/
+artifacts/
+outputs/
+mlruns/
+
+# Spark / Docker / IDE / OS
+.sparkStaging/
+spark-warehouse/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local experimentation
+.coverage
+htmlcov/
+.ipynb_checkpoints/

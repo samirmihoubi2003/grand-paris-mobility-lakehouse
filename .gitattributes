@@ -1,0 +1,26 @@
+
+# Normalize text files in the Git repository
+* text=auto
+
+# Cross-platform source code and documentation
+*.py     text eol=lf
+*.md     text eol=lf
+*.yml    text eol=lf
+*.yaml   text eol=lf
+*.json   text eol=lf
+*.toml   text eol=lf
+*.sh     text eol=lf
+*.sql    text eol=lf
+*.mmd    text eol=lf
+*.gitignore text eol=lf
+*.editorconfig text eol=lf
+
+# Windows PowerShell scripts
+*.ps1    text eol=crlf
+
+# Binary files must not be converted
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.pdf    binary
+*.zip    binary
