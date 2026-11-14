@@ -41,3 +41,8 @@ Thumbs.db
 .coverage
 htmlcov/
 .ipynb_checkpoints/
+
+# Temporary editor files
+*.swp
+*.swo
+*.swn
