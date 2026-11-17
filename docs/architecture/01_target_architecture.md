@@ -20,8 +20,7 @@ flowchart LR
 
 ## Pourquoi ne pas tout démarrer en même temps ?
 
-Le matériel d'expérimentation possède 15,9 Go de RAM. Une plateforme complète Kafka + Spark + Airflow + MinIO + PostgreSQL peut créer une contention artificielle et fausser les mesures. On doit introduire, isoler et mesurer chaque service.
-
+Le poste de développement dispose de 15,9 Go de RAM. L'exécution simultanée de Kafka, Spark, Airflow et PostgreSQL peut entraîner une contention des ressources locales et fausser les mesures de performance. Le stockage objet sera assuré par Amazon S3 (AWS), et non par une solution de stockage locale. Chaque service sera introduit progressivement, configuré et évalué séparément. Les coûts AWS, les latences réseau et les permissions d'accès seront également documentés.
 ## Séquence de livraison
 
 1. **MVP ingestion :** collecte HTTP robuste, schéma d'entrée, métadonnées temporelles, tests unitaires, données locales.
