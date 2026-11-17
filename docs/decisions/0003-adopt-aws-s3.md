@@ -1,9 +1,9 @@
 
 # ADR 0003 — Adoption d'Amazon S3
 
-**Date :** 2026-11-17  
-**Statut :** Accepté — implémentation à venir
+**Date :** 2026-11-17
 
+**Statut :** Accepté — implémentation à venir
 ## 1. Contexte
 
 Le projet nécessite un stockage durable des données
